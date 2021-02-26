@@ -9,24 +9,29 @@ Home Equity Loan
 Home equity loan—also known as an equity loan, home equity installment loan, or second mortgage—is a type of consumer debt. Home equity loans allow homeowners to borrow against the equity in their home. The loan amount is based on the difference between the home’s current market value and the homeowner’s mortgage balance due.
 
 
+
 In this project, my role is as a data scientist at a company engaged in HMEQ services. I am asked by stakeholder in my company To find the best model. The best model as a predictor and identification tool quickly, precisely, and accurately, so that companies can minimize borrowers who fail to pay.
 
+
 I use dataset HMEQ, you can get the data from <a href="http://www.creditriskanalytics.net/datasets-private2.html">link-dataset.</a>The data set HMEQ reports characteristics and delinquency information for 5,960 home equity loans. A home equity loan is a loan where the obligor uses the equity of his or her home as the underlying collateral. The data set has the following characteristics:
-◾ BAD: 1 = applicant defaulted on loan or seriously delinquent; 0 = applicant paid loan
-◾ LOAN: Amount of the loan request
-◾ MORTDUE: Amount due on existing mortgage
-◾ VALUE: Value of current property
-◾ REASON: DebtCon = debt consolidation; HomeImp = home improvement
-◾ JOB: Occupational categories
-◾ YOJ: Years at present job
-◾ DEROG: Number of major derogatory reports
-◾ DELINQ: Number of delinquent credit lines
-◾ CLAGE: Age of oldest credit line in months
-◾ NINQ: Number of recent credit inquiries
-◾ CLNO: Number of credit lines
-◾ DEBTINC: Debt-to-income ratio
+
+- BAD: 1 = applicant defaulted on loan or seriously delinquent; 0 = applicant paid loan
+- LOAN: Amount of the loan request
+- MORTDUE: Amount due on existing mortgage
+- VALUE: Value of current property
+- REASON: DebtCon = debt consolidation; HomeImp = home improvement
+- JOB: Occupational categories
+- YOJ: Years at present job
+- DEROG: Number of major derogatory reports
+- DELINQ: Number of delinquent credit lines
+- CLAGE: Age of oldest credit line in months
+- NINQ: Number of recent credit inquiries
+- CLNO: Number of credit lines
+- DEBTINC: Debt-to-income ratio
+
 
 The project consisted of several steps including data preprocessing and exploratory data analysis, data visualization, and modelling.
+
 
 Exploratory Data Analysis
 -------
@@ -48,10 +53,14 @@ This case is classified as a problem. I use 4 models benchmark:
 - Decision Tree Classifier
 - Random Forest Classifier
 
+
+
 In this case, I have an imbalanced target variable so i will apply resampling to the models:
 -ROS
 -RUS
 -SMOTE
+
+
 
 Here are the evaluation metrics for different models with resampling:
 
@@ -101,6 +110,8 @@ So 4 models have been selected:
 - DecisionTreeClassifier_benchmark_rus
 - LogisticRegression_benchmark_rus
 
+
+
 and then, i tuned for those 4 models. I get some new models:
 
 <center>
@@ -121,6 +132,8 @@ and then, i tuned for those 4 models. I get some new models:
 
  </center>
  
+
+
 Based on the table above, it can be seen that the RandomForest_tunned_rus model has the highest Recall Score. So that the model will be used for the HOME EQUITY LOAN prediction model. For the details you can visit <a href="https://github.com/ramzym365/Final-Project-Purwadhika-JCDS-1-Loan-PredictionnL104/blob/main/Presentation.pptx">'Modelling'</a>.
 
 
