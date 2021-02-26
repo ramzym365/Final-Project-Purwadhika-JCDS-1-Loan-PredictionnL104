@@ -1,5 +1,8 @@
 # Final-Project-Purwadhika-JCDS-1-Loan-Prediction
 
+
+![MachinLearning.jpg](https://giphy.com/gifs/UqqVRaP8y4uo1GNxbN/html5)
+
 About
 -------
 
